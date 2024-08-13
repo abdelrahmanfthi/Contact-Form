@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="./assets/images/favicon-32x32.png"/>
+</head>
+<body>
+    <div class="cont">
+        <div class="main">
+            <h2>Contact Us</h2>
+            <div class="name">
+                <div class="firstName">
+                    <label for="firstNameImput">First Name *</label>
+                    <input type="text" id="firstNameImput" name="firstName" required>
+                    <div class="error1"></div>
+                </div>
+                <div class="lastName">
+                    <label for="lastNameImput">Last Name *</label>
+                    <input type="text" id="lastNameImput">
+                    <div class="error2"></div>
+                </div>
+            </div>
+            <div class="eMail">
+                <label for="eMail">E-Mail *</label>
+                <input type="text" id="eMail">
+                    <div class="error3"></div>
+            </div>
+            <label for="" class="mainQuary">Quary Type *
+                <div class="quaryParant">
+                    <div class="firstRadio">
+                        <input id="general" type="radio" name="Quary Type" value="General" >
+                        <label for="general">General</label>
+                    </div>
+                    <div class="firstRadio">
+                        <input id="support" type="radio" name="Quary Type" value="Support">
+                        <label for="support">Support</label>
+                    </div>                  
+                </div>
+                <div class="error4"></div>  
+            </label>
+            <div class="textAirea">
+                <label for="txt">Message *</label>
+                <textarea name="textAireaName" id="txt"  cols="30" rows="6" ></textarea>
+                    <div class="error5"></div>
+            </div>
+            <div class="checkBox">
+                <input class="checks" type="checkbox" name="check" value="check">
+                <label for="check" id="checked">I consent to being contacted by the team *</label>
+            </div>
+              <div class="error6"></div>
+            <input type="submit" class="submit">
+        </div>
+            <div id="customAlert" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Message Sent!</h1>
+                <p>Thanks for completing the form. We'll be in touch soon!</p>
+                </div>
+            </div>
+          
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
